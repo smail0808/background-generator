@@ -5,18 +5,19 @@ var bodyBg = document.getElementById("body");
 
 
 function setGrediant() {
-bodyBg.style.background = 
-	"linear-gradient(to right," + color1.value +"," + color2.value +")";
-	css.textContent = "background: " + bodyBg.style.background + ";";
+    bodyBg.style.background =
+        "linear-gradient(to right," + color1.value + "," + color2.value + ")";
+    css.textContent = "background: " + bodyBg.style.background + ";";
 }
 
-color1.addEventListener("input",setGrediant);
+color1.addEventListener("input", setGrediant);
 
-color2.addEventListener("input",setGrediant);
+color2.addEventListener("input", setGrediant);
 
 //jQuery
-$(document).ready(function(){
-$("p").click(function(){
-//code ...
-});
+$(document).ready(function() {
+    $("p").click(function() {
+        console.log("jQuery");
+        //code ...
+    });
 });
